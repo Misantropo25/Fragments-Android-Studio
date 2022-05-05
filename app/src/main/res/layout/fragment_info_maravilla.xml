@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".maravillasModernas.infoMaravilla">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/imagenMaravilla"
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_marginBottom="30dp"
+                app:srcCompat="@drawable/machupicchu" />
+
+            <TextView
+                android:id="@+id/nombreMaravilla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Machu Picchu"
+                android:textAlignment="center"
+                android:textSize="50dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="142dp" />
+
+            <TextView
+                android:id="@+id/infoMaravilla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Descubierta en el año 1902 por Agustín Lizárraga y dada a conocer al mundo en 1911 por Hiram Bingham, la ciudad “perdida” de los Incas fue construida a mediados del siglo XV d. C por órdenes del Inca Pachacútec. Si bien este centro arqueológico no tiene nombre, Machu Picchu, la montaña donde se encuentra ubicada, significa en quechua “Montaña Vieja”. Según investigaciones, este lugar servía como un espacio de reposo para el Inca y estaba destinado a albergar un aproximado de 300 personas."
+                android:textSize="18dp"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="40dp"
+                tools:layout_editor_absoluteX="142dp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

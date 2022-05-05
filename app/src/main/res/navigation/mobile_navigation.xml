@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.guiadefragmentos.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_sonido"
+            app:destination="@id/sonido" />
+        <action
+            android:id="@+id/action_nav_home_to_maravillasModernas"
+            app:destination="@id/maravillasModernas" />
+        <action
+            android:id="@+id/action_nav_home_to_direccionamiento"
+            app:destination="@id/direccionamiento" />
+        <action
+            android:id="@+id/action_nav_home_to_sitioWeb"
+            app:destination="@id/sitioWeb" />
+        <action
+            android:id="@+id/action_nav_home_to_calculadora"
+            app:destination="@id/calculadora" />
+        <action
+            android:id="@+id/action_nav_home_to_lectorQR"
+            app:destination="@id/lectorQR" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/calculadora"
+        android:name="com.example.guiadefragmentos.calculadora.calculadora"
+        android:label="Calculadora"
+        tools:layout="@layout/fragment_calculadora" />
+    <fragment
+        android:id="@+id/maravillasModernas"
+        android:name="com.example.guiadefragmentos.maravillasModernas.maravillasModernas"
+        android:label="Maravillas Modernas"
+        tools:layout="@layout/fragment_maravillas_modernas" >
+        <action
+            android:id="@+id/action_maravillasModernas_to_infoMaravilla"
+            app:destination="@id/infoMaravilla" />
+    </fragment>
+    <fragment
+        android:id="@+id/direccionamiento"
+        android:name="com.example.guiadefragmentos.direccionamiento.direccionamiento"
+        android:label="Direccionamiento"
+        tools:layout="@layout/fragment_direccionamiento" />
+    <fragment
+        android:id="@+id/sitioWeb"
+        android:name="com.example.guiadefragmentos.sitioWeb.sitioWeb"
+        android:label="Sitio Web"
+        tools:layout="@layout/fragment_sitio_web" />
+    <fragment
+        android:id="@+id/sonido"
+        android:name="com.example.guiadefragmentos.sonido.sonido"
+        android:label="Sonido"
+        tools:layout="@layout/fragment_sonido" >
+        <action
+            android:id="@+id/action_sonido_to_reproducirMusica"
+            app:destination="@id/reproducirMusica" />
+    </fragment>
+    <fragment
+        android:id="@+id/reproducirMusica"
+        android:name="com.example.guiadefragmentos.sonido.ReproducirMusica"
+        android:label="Sonido"
+        tools:layout="@layout/fragment_reproducir_musica" />
+    <fragment
+        android:id="@+id/infoMaravilla"
+        android:name="com.example.guiadefragmentos.maravillasModernas.infoMaravilla"
+        android:label="Maravillas Modernas"
+        tools:layout="@layout/fragment_info_maravilla" />
+    <fragment
+        android:id="@+id/lectorQR"
+        android:name="com.example.guiadefragmentos.lectorqr.lectorQR"
+        android:label="Lector codigo QR"
+        tools:layout="@layout/fragment_lector_q_r" >
+        <action
+            android:id="@+id/action_lectorQR_to_infoQr"
+            app:destination="@id/infoQr" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoQr"
+        android:name="com.example.guiadefragmentos.lectorqr.infoQr"
+        android:label="Lector codigo QR"
+        tools:layout="@layout/fragment_info_qr" />
+
+
+</navigation>

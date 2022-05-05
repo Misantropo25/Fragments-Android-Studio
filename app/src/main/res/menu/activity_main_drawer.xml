@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/calculadora"
+            android:icon="@drawable/ic_baseline_calculate_24"
+            android:title="Calculadora" />
+        <item
+            android:id="@+id/maravillasModernas"
+            android:icon="@drawable/ic_baseline_build_circle_24"
+            android:title="Maravillas modernas" />
+        <item
+            android:id="@+id/direccionamiento"
+            android:icon="@drawable/ic_baseline_apps_24"
+            android:title="Direccionamiento" />
+        <item
+            android:id="@+id/sitioWeb"
+            android:icon="@drawable/ic_baseline_web_24"
+            android:title="Sitio Web" />
+        <item
+            android:id="@+id/sonido"
+            android:icon="@drawable/ic_baseline_surround_sound_24"
+            android:title="Sonido" />
+        <item
+            android:id="@+id/lectorQR"
+            android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+            android:title="Qr scanner" />
+
+    </group>
+</menu>

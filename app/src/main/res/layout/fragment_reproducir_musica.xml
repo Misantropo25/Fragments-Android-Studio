@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sonido.ReproducirMusica">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".sonido.ReproducirMusica">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A8000000"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/regresar"
+                    android:layout_width="60dp"
+                    android:layout_height="52dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_keyboard_return_24">
+
+                    ></ImageButton>
+
+                <TextView
+                    android:id="@+id/titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Musicas"
+                    android:paddingRight="40dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="40dp" />
+
+                <ImageButton
+                    android:id="@+id/info"
+                    android:layout_width="50dp"
+                    android:layout_height="52dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_info_24">
+                    >
+                </ImageButton>
+
+            </LinearLayout>
+
+
+            <Spinner
+                android:id="@+id/spinnerMusicas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="31dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/album"
+                    android:layout_width="280dp"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/salsa1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fondomusic" />
+
+            </LinearLayout>
+
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp" />
+
+            <LinearLayout
+                android:layout_width="383dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/anterior"
+                    android:layout_width="60dp"
+                    android:layout_height="52dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_arrow_left_24" />
+
+                <ImageButton
+                    android:id="@+id/pausa"
+                    android:layout_width="60dp"
+                    android:layout_height="52dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_stop_circle_24" />
+
+                <ImageButton
+                    android:id="@+id/repetir"
+                    android:layout_width="60dp"
+                    android:layout_height="52dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_repeat_24" />
+
+                <ImageButton
+                    android:id="@+id/continuar"
+                    android:layout_width="60dp"
+                    android:layout_height="52dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_play_circle_filled_24" />
+
+                <ImageButton
+                    android:id="@+id/siguiente"
+                    android:layout_width="60dp"
+                    android:layout_height="52dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_arrow_right_24" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
